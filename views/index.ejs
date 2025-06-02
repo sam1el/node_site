@@ -1,0 +1,8 @@
+<% layout('layout') -%>
+<h2>Welcome to Lonestar Supras Event Coordination</h2>
+<% if (user) { %>
+  <p>Hello, <%= user.email %>!</p>
+  <a href="/events/add">Add Event</a>
+<% } else { %>
+  <p>Please <a href="/auth/login">login</a> to add events.</p>
+<% } %>
